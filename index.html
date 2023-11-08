@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit converter</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <h2>Unit Converter</h2>
+            <div id="options">
+                <h3>Select one option</h3>
+                <select id="from" onclick="myFunction()">
+                    <option value="Celsius">Celsius to Fahrenhrit</option>
+                    <option value="Meters">Meters to Feet</option>
+                    <option value="Kilograms">Kilograms to Pounds</option>
+                </select>
+            </div>
+            <div id="value">
+                <div id="in">
+                    <div id="one"></div>
+                    <form>
+                        <input type="number" id="show" oninput="calculate()">
+                    </form>
+                </div>
+                <div id="to">
+                    <div id="two"></div>
+                    <form>
+                        <input type="text" id="showto" readonly>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
